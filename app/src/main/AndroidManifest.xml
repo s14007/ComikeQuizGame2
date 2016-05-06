@@ -23,7 +23,8 @@
         <activity android:name=".RandomActivity" />
         <activity android:name=".RandomGame" />
         <activity android:name=".SectionSelect" />
-        <activity android:name=".TimeAttackGame"></activity>
+        <activity android:name=".TimeAttackGame" />
+        <activity android:name=".TimeAttackSelect"></activity>
     </application>
 
 </manifest>
