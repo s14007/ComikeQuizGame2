@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
                 break;
             // タッチされたボタンがタイムアタックの場合
             case R.id.button_time:
+                intent = new Intent(MainActivity.this, TimeAttackGame.class);
+                startActivity(intent);
                 Toast.makeText(this, "ごめんなさい、タイムアタックは\n未実装です（＞人＜）", Toast.LENGTH_SHORT).show();
                 break;
         }
