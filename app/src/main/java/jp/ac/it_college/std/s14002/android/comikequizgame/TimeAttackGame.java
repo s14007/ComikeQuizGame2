@@ -34,6 +34,8 @@ public class TimeAttackGame extends AppCompatActivity {
     //    ArrayList<Integer> questionList = new ArrayList<>();
     private int[] soundId = new int[SOUND_POOL_MAX]; //使う効果音の数だけ配列生成
 
+    private int sum = 1;
+
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,7 +98,8 @@ public class TimeAttackGame extends AppCompatActivity {
     // 問題文セット処理
     private void setQuestion() {
         // 画面↑にあるテキストを「クイズNo.　+　問題No で表示
-        ((TextView) findViewById(R.id.textNo)).setText("クイズNo." + QuestionNo);
+        ((TextView) findViewById(R.id.textNo)).setText("クイズNo." + sum);
+        sum++;
 
         // 作成したDatabaseHelperクラスに読み取り専用でアクセス
         DatabaseHelper databaseHelper = new DatabaseHelper(this);
