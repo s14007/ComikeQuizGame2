@@ -8,20 +8,15 @@ import android.database.sqlite.SQLiteDatabase;
 import android.media.SoundPool;
 import android.os.Build;
 import android.os.CountDownTimer;
-import android.os.Handler;
 import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.Chronometer;
 import android.widget.TextView;
-
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class TimeAttackGame extends AppCompatActivity {
     private Chronometer chronometer;
@@ -99,7 +94,6 @@ public class TimeAttackGame extends AppCompatActivity {
     private void setQuestion() {
         // 画面↑にあるテキストを「クイズNo.　+　問題No で表示
         ((TextView) findViewById(R.id.textNo)).setText("クイズNo." + sum);
-        sum++;
 
         // 作成したDatabaseHelperクラスに読み取り専用でアクセス
         DatabaseHelper databaseHelper = new DatabaseHelper(this);
@@ -158,10 +152,10 @@ public class TimeAttackGame extends AppCompatActivity {
             DatabaseHelper databaseHelper = new DatabaseHelper(this);
             SQLiteDatabase database = databaseHelper.getWritableDatabase();
             // データベース更新
-            int ret;
             try {
-                ret = database.update("MyTable", values, whereClause, new String[]{String.valueOf((Integer.parseInt(QuestionNo) + 1))});
+                database.update("MyTable", values, whereClause, new String[]{String.valueOf((Integer.parseInt(QuestionNo) + 1))});
                 QuestionNo = String.valueOf(Integer.parseInt(QuestionNo) + 10);
+                sum++;
             } finally {
                 database.close();
             }

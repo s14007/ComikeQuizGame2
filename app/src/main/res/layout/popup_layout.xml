@@ -4,6 +4,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="46dp"
+        android:text="Congratulations!!!"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#F50057"
+        />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

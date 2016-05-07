@@ -48,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button_time:
                 intent = new Intent(MainActivity.this, TimeAttackSelect.class);
                 startActivity(intent);
-                Toast.makeText(this, "ごめんなさい、タイムアタックは\n未実装です（＞人＜）", Toast.LENGTH_SHORT).show();
                 break;
         }
     }

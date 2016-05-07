@@ -16,6 +16,7 @@
             android:layout_weight="2"
             android:text="BestScoreRecord"
             android:gravity="center"
+            android:textStyle="bold"
             android:layout_margin="10dp"
             />
     </LinearLayout>
@@ -39,6 +40,7 @@
             android:layout_weight="1"
             android:text="name"
             android:id="@+id/recordName"
+            android:textStyle="bold"
             android:layout_margin="10dp" />
 
         <TextView
@@ -49,6 +51,7 @@
             android:textSize="46sp"
             android:text="aaaa"
             android:gravity="right"
+            android:textStyle="bold"
             android:layout_margin="10dp"
             />
 
@@ -70,6 +73,7 @@
             android:layout_weight="2"
             android:text="ClearTime"
             android:gravity="center"
+            android:textStyle="bold"
             android:layout_margin="10dp"
             />
     </LinearLayout>
@@ -90,6 +94,7 @@
         android:gravity="center"
         android:textSize="46sp"
         android:text="none"
+        android:textStyle="bold"
         android:layout_margin="10dp"
         />
 
@@ -104,6 +109,7 @@
         android:layout_marginBottom="50dp"
         android:background="#00000000"
         android:textSize="50dp"
+        android:textStyle="bold"
         android:text="OK"
         />
 

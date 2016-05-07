@@ -11,8 +11,8 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:textColor="#F50057"
-        android:text="0"
-        android:textSize="92dp" />
+        android:text="@string/count"
+        android:textSize="92sp" />
 
     <LinearLayout xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
@@ -28,13 +28,14 @@
             android:text="クイズNo."
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#FFFFFF"
-            android:textSize="26dp" />
+            android:textStyle="bold"
+            android:textSize="26sp" />
 
         <Chronometer
             android:id="@+id/chronometer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="46dp" />
+            android:textSize="46sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -48,13 +49,14 @@
 
                 <TextView
                     android:id="@+id/textQuestion"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center_vertical|center_horizontal"
                     android:text="Medium Text"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textSize="46dp" />
+                    android:textStyle="bold"
+                    android:textSize="46sp" />
 
             </LinearLayout>
 
@@ -77,7 +79,8 @@
                         android:layout_weight="1"
                         android:onClick="onClick"
                         android:text="New Button"
-                        android:textSize="26dp" />
+                        android:textStyle="bold"
+                        android:textSize="26sp" />
 
                     <Button
                         android:id="@+id/attackButton2"
@@ -86,7 +89,8 @@
                         android:layout_weight="1"
                         android:onClick="onClick"
                         android:text="New Button"
-                        android:textSize="26dp" />
+                        android:textStyle="bold"
+                        android:textSize="26sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -102,7 +106,8 @@
                         android:layout_weight="1"
                         android:onClick="onClick"
                         android:text="New Button"
-                        android:textSize="26dp" />
+                        android:textStyle="bold"
+                        android:textSize="26sp" />
 
                     <Button
                         android:id="@+id/attackButton4"
@@ -111,7 +116,8 @@
                         android:layout_weight="1"
                         android:onClick="onClick"
                         android:text="New Button"
-                        android:textSize="26dp" />
+                        android:textStyle="bold"
+                        android:textSize="26sp" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
