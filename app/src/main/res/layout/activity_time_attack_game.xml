@@ -1,82 +1,120 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="quizgame.test.com.quizgame.MainGame" android:layout_height="match_parent" android:layout_width="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="quizgame.test.com.quizgame.MainGame">
+
     <TextView
         android:id="@+id/countDown"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:textSize="92dp"
-        />
+        android:text="0"
+        android:textSize="92dp" />
 
-<LinearLayout
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <TextView
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="クイズNo."
-        android:id="@+id/textNo"
-        android:gravity="center_vertical|center_horizontal"
-        android:background="#F50057"
-        android:textColor="#FFFFFF"
-        android:textSize="26dp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Chronometer
-        android:id="@+id/chronometer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="46dp"
-        />
+        <TextView
+            android:id="@+id/textNo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#F50057"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="クイズNo."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textSize="26dp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
-        android:id="@+id/textQuestion"
-        android:layout_weight="1"
-        android:gravity="center_vertical|center_horizontal"
-        android:textSize="46dp" />
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="46dp" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/attackButton1"
-        android:textSize="26dp"
-        android:onClick="onClick" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/attackButton2"
-        android:textSize="26dp"
-        android:onClick="onClick" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/attackButton3"
-        android:textSize="26dp"
-        android:onClick="onClick" />
+                <TextView
+                    android:id="@+id/textQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="46dp" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/attackButton4"
-        android:textSize="26dp"
-        android:onClick="onClick" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/attackButton1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="onClick"
+                        android:text="New Button"
+                        android:textSize="26dp" />
+
+                    <Button
+                        android:id="@+id/attackButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="onClick"
+                        android:text="New Button"
+                        android:textSize="26dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/attackButton3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="onClick"
+                        android:text="New Button"
+                        android:textSize="26dp" />
+
+                    <Button
+                        android:id="@+id/attackButton4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="onClick"
+                        android:text="New Button"
+                        android:textSize="26dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
 
 
-</LinearLayout>
+    </LinearLayout>
 </RelativeLayout>
