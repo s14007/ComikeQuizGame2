@@ -10,13 +10,16 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 
+import java.sql.Time;
+
 public class TimeAttackSelect extends AppCompatActivity {
 
     @Override
     protected void onResume() {
         super.onResume();
         // ボタン処理呼び出し
-        setIcon();
+//        setIcon();
+
     }
 
     @Override
@@ -24,9 +27,17 @@ public class TimeAttackSelect extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_time_attack_select);
+
+        findViewById(R.id.startButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TimeAttackSelect.this, TimeAttackGame.class);
+                startActivity(intent);
+            }
+        });
     }
 
-    // ボタンをクリア済みかどうかで色分け&クリック不可処理
+   /* // ボタンをクリア済みかどうかで色分け&クリック不可処理
     private void setIcon(){
         // 作成したDatabaseHelperクラスに読み込み専用でアクセス
         DatabaseHelper databaseHelper = new DatabaseHelper(this);
@@ -74,14 +85,14 @@ public class TimeAttackSelect extends AppCompatActivity {
             button.setTextSize(50);
             button.setBackgroundColor(0xffffffff); // ボタンの色
         }
-    }
+    }*/
 
-    // ボタンクリックでゲーム画面へ遷移
+    /*// ボタンクリックでゲーム画面へ遷移
     public void onClick(View v) {
         Intent intent = new Intent(TimeAttackSelect.this, TimeAttackGame.class);
         // 選択されたステージをボタンのテキストから取得
         intent.putExtra("Time", ((Button) v).getText());
         Log.e("Log", (String) ((Button) v).getText());
         startActivity(intent);
-    }
+    }*/
 }

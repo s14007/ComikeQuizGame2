@@ -1,8 +1,20 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="quizgame.test.com.quizgame.MainGame" android:layout_height="match_parent" android:layout_width="match_parent">
+    <TextView
+        android:id="@+id/countDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="92dp"
+        />
+
+<LinearLayout
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="quizgame.test.com.quizgame.MainGame"
     android:orientation="vertical">
 
     <TextView
@@ -37,7 +49,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="New Button"
-        android:id="@+id/button1"
+        android:id="@+id/attackButton1"
         android:textSize="26dp"
         android:onClick="onClick" />
 
@@ -45,7 +57,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="New Button"
-        android:id="@+id/button2"
+        android:id="@+id/attackButton2"
         android:textSize="26dp"
         android:onClick="onClick" />
 
@@ -53,7 +65,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="New Button"
-        android:id="@+id/button3"
+        android:id="@+id/attackButton3"
         android:textSize="26dp"
         android:onClick="onClick" />
 
@@ -61,7 +73,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="New Button"
-        android:id="@+id/button4"
+        android:id="@+id/attackButton4"
         android:textSize="26dp"
         android:onClick="onClick" />
+
+
 </LinearLayout>
+</RelativeLayout>
